@@ -3,9 +3,9 @@ apiVersion: serving.kserve.io/v1alpha1
 kind: ServingRuntime
 metadata:
   annotations:
-    opendatahub.io/accelerator-name: migrated-gpu
+    #opendatahub.io/accelerator-name: migrated-gpu
     opendatahub.io/apiProtocol: REST
-    opendatahub.io/recommended-accelerators: '["nvidia.com/gpu"]'
+    #opendatahub.io/recommended-accelerators: '["nvidia.com/gpu"]'
     opendatahub.io/template-display-name: vLLM ServingRuntime for KServe
     opendatahub.io/template-name: vllm-runtime
     openshift.io/display-name: vllm
