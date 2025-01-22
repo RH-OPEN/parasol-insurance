@@ -11,7 +11,11 @@ include::_attributes.adoc[]
 
 == データ接続の作成
 
-* データ サイエンス プロジェクトの *Data connections* タブで、共有 Minio を参照するデータ接続を作成します。
+* データ サイエンス プロジェクトの *Data connections* タブで、 **Add data connection** をクリックして、モデルのコピーが保存されている共有ストレージ (Minio) を参照する接続を作成します。
++
+[.bordershadow]
+image::04/04-add-data-connection.png[]
+
 * 入力する必要がある情報は次のとおりです。
 ** Name:
 [.lines_space]
@@ -97,7 +101,7 @@ Standard
 [.console-input]
 [source, text]
 [subs=attributes+]
-None
+None (bug: even when selecting `None`, the drop down will still show `Select...`)
 ** Model route
 [.lines_space]
 [.console-input]
@@ -117,13 +121,13 @@ unchecked
 [.bordershadow]
 image::04/add-model-server-config.png[]
 
-* [**Add**] をクリックすると、モデル サーバーを作成できます。
+* **Add** をクリックすると、モデル サーバーを作成できます。
 
 == モデルのデプロイ
 
-プロジェクトの *Models* タブで、 `Deploy model` を選択します。
+プロジェクトの *Models* タブで、  **Models and model servers** で次のようにします。
 
-* [**Deploy model**] をクリックします
+* **Deploy model** をクリックします
 +
 [.bordershadow]
 image::04/select-deploy-model.png[]
@@ -141,7 +145,7 @@ My first Model
 [.console-input]
 [source, text]
 [subs=attributes+]
-My first Model Server
+My first Model Server (pre-filled)
 ** Model server - Model framework
 [.lines_space]
 [.console-input]

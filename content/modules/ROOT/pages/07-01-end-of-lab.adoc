@@ -1,12 +1,12 @@
 = Thank you for your participation
 include::_attributes.adoc[]
 
-We hope that the materials we used during this time together were useful and gave you a better appreciation and understanding of what goes into an intelligent application.
+この間一緒に使用した資料が役に立ち、インテリジェント アプリケーションに何が含まれるかについて理解を深めていただければ幸いです。
 
-If you notice https://github.com/rh-aiservices-bu/parasol-insurance/issues[issues,window=_blank] with the content and/or want to send us a https://github.com/rh-aiservices-bu/parasol-insurance/pulls[pull request,window=_blank], we'll appreciate it very much.
+コンテンツに関する https://github.com/rh-aiservices-bu/parasol-insurance/issues[issues,window=_blank] に気付いた場合や、 https://github.com/rh-aiservices-bu/parasol-insurance/pulls[pull request,window=_blank] を送信したい場合は、ぜひお知らせください。
 
-The instructions of this {ic} are always available at https://rh-aiservices-bu.github.io/parasol-insurance/[https://rh-aiservices-bu.github.io/parasol-insurance/,window=_blank]. Make note of this URL as it will be updated with new content as we continue to improve the {ic-lab}.
+この {ic} の手順は、https://rh-aiservices-bu.github.io/parasol-insurance/[https://rh-aiservices-bu.github.io/parasol-insurance/,window=_blank] からいつでも参照できます。 {ic-lab} の改善を続けると、新しいコンテンツで更新されるため、この URL をメモしておいてください。
 
-== Acknowledgements
+== 謝辞
 
-Thanks to everyone who helped create this {ic}, https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] and reviewers!
+この {ic}、https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] の作成に協力してくれた皆さん、そしてレビュー担当者の皆さんに感謝します。
