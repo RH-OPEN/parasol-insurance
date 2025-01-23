@@ -1,18 +1,20 @@
 = Retrieval-Augmented Generation - Extending the capabilities of our model
 include::_attributes.adoc[]
 
-An LLM is a very capable tool, but only to the extent of the knowledge or information it has been trained on. After all, you only know what you know, right? But what if you need to ask a question that is not in the training data? Or what if you need to ask a question that is not in the training data, but is related to it?
+LLMは非常に強力なツールですが、訓練データを通じて得られた知識や情報の範囲内でのみ機能します。しかし、訓練データに含まれていない質問をしなければならない場合はどうでしょう？または、訓練データには含まれていないが、それに関連する質問をしなければならない場合はどうでしょう？
 
-There are different ways to solve this problem, depending on the resources you have and the time or money you can spend on it. Here are a few options:
+この問題を解決する方法はいくつかあり、持っているリソースやそれにかけられる時間やお金によって異なります。以下にその例を示します：
 
-- Fully retrain the model to include the information you need. For an LLM, it's only possible for a handful of companies in the world that can afford literally thousands of GPUs running for weeks.
-- Fine-tune the model with this new information. This requires way less resources, and can usually be done in a few hours or minutes (depending on the size of the model). However as it does not fully retrain the model, the new information may not be completely integrated in the answers. Fine-tuning excels at giving a better understanding of a specific context or vocabulary, a little bit less on injecting new knowledge. Plus you have to retrain and redeploy the model anyway any time you want to add more information.
-- Put this new information in a database and have the parts relevant to the query retrieved and added to this query as a context before sending it to the LLM. This technique is called **Retrieval Augmented Generation, or RAG**. It is interesting as you don't have to retrain or fine-tune the model to benefit of this new knowledge, that you can easily update at any time.
+- 必要な情報を含めるためにモデルを完全に再学習する。LLMに関しては、数百から数千のGPUを何週間も稼働させることができる限られた企業にしか不可能です。
+- 新しい情報でモデルをファインチューニングする。ファインチューニングの場合必要なリソースは大きく減り、数日または数時間で行うことができます（モデルのサイズに依存）。ただし、モデルを完全に再学習しないため、新しい情報が回答に完全に取り込まれない可能性があります。ファインチューニングは特定のコンテキストや語彙の理解を向上させるのに優れています。頻繁に情報の更新がある場合、その度にモデルをファインチューニングし、デプロイし直す必要があります。
+- 新しい情報をデータベースに保存し、クエリに関連する文章を検索して、その結果をLLMに送信するコンテキストとして追加します。この技術は**Retrieval Augmented Generation（RAG）**と呼ばれています。この方法は、モデルを再学習したりファインチューニングしたりせずに、新しい知識を利用でき、いつでも簡単に更新できます。
 
-We have already prepared a Vector Database using https://milvus.io/[Milvus,window=_blank], where we have stored (in the form of https://www.ibm.com/topics/embedding[Embeddings,window=_blank]) the content of the https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/[California Driver's Handbook,window=_blank].
+私たちはすでに[Milvus](https://milvus.io/)を使用してベクトルデータベースを準備しており、[California Driver's Handbook](https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/)（カリフォルニアの運転者向けハンドブック）の内容を[エンべディング](https://www.ibm.com/topics/embedding)して保存しています。
 
-In this exercise, we are going to use the RAG technique to **make some queries about a Claim** and see how this new knowledge can help without having to modify our LLM.
+この演習では、RAGテクニックを使用して**請求に関するいくつかのクエリを実行**し、LLMを修正することなく、この新しい知識がどのように役立つかを確認します。
 
-From the `parasol-insurance/lab-materials/03` folder, please open the notebook called `03-05-retrieval-augmented-generation.ipynb` and follow the instructions.
+`parasol-insurance/lab-materials/03` フォルダから、 `03-05-retrieval-augmented-generation.ipynb` というノートブックを開き、指示に従ってください。
+
+完了したら、ノートブックを閉じて次のページに進みます。
 
 When done, you can close the notebook and head to the next page.
