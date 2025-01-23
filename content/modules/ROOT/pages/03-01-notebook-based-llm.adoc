@@ -1,8 +1,8 @@
 = Notebook-Based LLM Example
 include::_attributes.adoc[]
 
-In this exercise, we will use a notebook to investigate how LLMs can be used.
+この演習では、ノートブックを使用して LLM の使用方法を調べます。
 
-From the `parasol-insurance/lab-materials/03` folder, please open the notebook called `03-01-nb-llm-example.ipynb` and follow the instructions.
+`parasol-insurance/lab-materials/03` フォルダーから、`03-01-nb-llm-example.ipynb` というノートブックを開き、指示に従ってください。
 
-When done, you can close the notebook and head to the next page.
+完了したら、ノートブックを閉じて次のページに進むことができます。
