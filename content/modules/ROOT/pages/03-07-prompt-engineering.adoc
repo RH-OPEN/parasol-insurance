@@ -1,32 +1,31 @@
 = Prompt Engineering exercise (optional)
 include::_attributes.adoc[]
 
-NOTE: This part of the {ic} is marked as optional. It can therefore be skipped without effect on the other parts of the lab. You can always come back to it later at the end of the {ic-lab} if you have time to spare.
+NOTE: このパートはオプション演習となります。そのため一旦スキップし、{ic-lab}全体を完了したあと、時間が余ったら実施してみて下さい。
 
-IMPORTANT: When you interact with ChatGPT or other commercial services, a lot of guardrails are in place to prevent you from getting unwanted  or not suitable for work results. In our {ic} exercises, we are using a model that is not protected by those guardrails, and we will be modifying its settings. Therefore, it is your responsibility to do it in a safe way, and to make sure that the results you get are suitable for you and/or your audience. The authors of this {ic} cannot be held responsible for any inappropriate results you may get.
+IMPORTANT: ChatGPTやその他の商用AIサービスとやり取りを行う際、多くのガードレールが設けられており、不適切な結果や望ましくない結果を防ぐ仕組みが備わっています。私たちの{ic}演習では、こうしたガードレールがないモデルを使用しており、設定の変更も行います。したがって、利用者はモデルの出力結果が自分や対象とする受け手に適したものであることを確認するの必要があります。
 
-As you have seen in the previous sections, there are different factors that will influence the results you can get from your model: the model parameters, the prompt, the query, and of course the data itself...
+これまでのセクションで見てきたように、様々な要因がモデルから得られる結果に影響を与えます：モデルのパラメータ、プロンプト、クエリ、そしてもちろんデータそのもの...。
 
-Let's see how we can adjust those different factors to get the best results.
+これらの異なる要素をどのように調整すれば最良の結果が得られるかを見ていきましょう。
 
-== Modifying the settings
+== 設定の変更
 
-Go back to the notebook `03-01-nb-llm-example.ipynb` and try changing:
+ノートブック `03-01-nb-llm-example.ipynb` に戻ってコードに変更を加えてみてください：
 
-- The llm parameters, like the `temperature`, to make the model more creative
-- The `prompt template`, to make the model behave differently, like giving the answer in the form of a poem. Or more useful in an enterprise context, give answers like it was addressing different types of audience: for example 5 years old children, or people without technical knowledge, or the opposite...
-- The `query` itself which you can use to override certain aspects of the prompt. This will show you why it's important to have guardrails in place against "prompt injection", like pre-filtering user queries
+- `temperature` のような llm パラメータを変更してみましょう。tempertureが低くなるとモデルはクエリに対して決まった回答を行うようになり、高くなるとよりクリエイティブな回答を行います
+- `prompt template` を変更して、モデルの挙動を変化させます。例えば、答えを詩の形式で返す。あるいは、企業のビジネス環境でより役立つように、特定のユーザーに向け答えるようにします。例えば、5歳の子供、あるいは技術的知識のない人、またはその反対の人などです。
+- `query` 自体は、プロンプトの特定の側面を上書きするために使用できます。これは、ユーザーのクエリを事前フィルタリングするなど、「プロンプトインジェクション」に対するガードレールを設置することが重要である理由を示しています。
 
-== Modifying the data
+== データの変更
 
-Go back to the notebook `03-02-summarization.ipynb` and try changing:
+ノートブック `03-02-summarization.ipynb` に戻り、以下を変更してみましょう。
 
-- Edit or create new claims, making them harder to understand. (Note: to edit the json file in Jupyter, right click on it and select "Open With > Editor")
-- Experiment with different languages
+- あえて内容を理解しづらくなるように、claimのJSONファイルを編集または新規に作成します。（注：Jupyterでjsonファイルを編集するには、右クリックして「Open With > Editor」を選択します）
 
-== Modifying the prompt
 
-Go back to the notebook `03-03-information-extraction.ipynb` and try changing:
+== プロンプトの変更
 
-- Edit or create new claims, making them harder to understand
-- Try to have the model more precise and concise in date and time extraction, like making it respect a specific format
+ノートブック `03-03-information-extraction.ipynb` に戻り、以下を変更してみてください。
+
+- 日付と時刻の抽出において、モデルの出力を特定のフォーマットに従うようにし、より正確かつ簡潔にするよう試す。
