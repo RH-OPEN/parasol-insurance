@@ -1,52 +1,52 @@
 = Getting connected
 include::_attributes.adoc[]
 
-For the purposes of this training session, we have provisioned a single {ocp} cluster, with {rhoai} deployed on it.
+このトレーニング セッションでは、単一の {ocp} クラスターをプロビジョニングし、その上に {rhoai} をデプロイしました。
 
-Each person attending this lab will have a unique user account in which to do their work.
+このラボに参加する各ユーザーには、作業を行うための固有のユーザー アカウントが与えられます。
 
-== Environment information
+== 環境情報
 
-__Note: if you are using the lab-deployed instructions, the values below will render properly. If not, like when using the rendered instructions from the Github repo, placeholder values will appear.__
+__Note: ラボにデプロイされた手順を使用している場合、以下の値は適切にレンダリングされます。そうでない場合、Github リポジトリからレンダリングされた手順を使用する場合など、プレースホルダー値が表示されます。__
 
-* Your account id: `{user}`
-* Your password: `{password}`
+* アカウント ID: `{user}`
+* パスワード: `{password}`
 
-In a new window or tab, open the following URL and log in:
+新しいウィンドウまたはタブで、次の URL を開いてログインします:
 
-* The {rhoai} Dashboard URL for our shared environment:
+* 共有環境の {rhoai} ダッシュボード URL:
 ** https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/[https://rhods-dashboard-redhat-ods-applications.{openshift_cluster_ingress_domain}/,window=_blank]
-* Click on the `Login with OpenShift` button:
+* `Login with OpenShift` ボタンをクリックします。:
 +
 [.bordershadow]
 image::02/02-01-login3.png[]
-* Enter your credentials (as detailed above)
-* The result should look like:
+* 認証情報を入力します (上記のとおり)
+* 結果は次のようになります:
 +
 [.bordershadow]
 image::02/02-01-login1.png[]
 
-* Because the password is so simple (`{password}`), your browser might display a scary message such as:
+* パスワードが非常に単純なため (`{password}`)、ブラウザに次のような恐ろしいメッセージが表示される場合があります:
 +
 [.bordershadow]
 image::02/02-01-login-scary.png[]
-* It is safe here to ignore this message when it pops up.
+*このメッセージが表示されたら無視しても問題ありません。
 
-* After you authenticate, the result should look like:
+* 認証後、結果は次のようになります:
 +
 [.bordershadow]
 image::02/02-01-rhoai-front-page.png[]
 
-If you got this far and saw all that, congratulations, you properly connected to the {rhoai} Dashboard Application!
+ここまで読んですべてご覧になったなら、おめでとうございます。{rhoai} ダッシュボード アプリケーションに正しく接続されました!
 
-We are now ready to start the {ic}.
+これで {ic} を開始する準備が整いました。
 
-== Getting Support
+== サポートを受けるためには
 
-* If you attend in person, in the room:
-** Some very kind colleagues of ours will be walking around in the room, to help and/or answer questions.
-** If you run into a particular issue, call out to one of them and quietly explain what the issue is.
+* 会場で直接参加する場合:
+** 親切な同僚が会場内を歩き回り、お手伝いや質問への回答をします。
+** 特定の問題に遭遇した場合は、同僚の 1 人に声をかけ、静かに問題の内容を説明してください。
 
-* If you attend remotely:
-** The organizer will indicate the best way to ask questions, usually through the video conferencing tool.
-** Depending on the setup, a Slack channel (or similar) may also be available. Please check with the organizer.
+* リモートで参加する場合:
+** 主催者が、通常はビデオ会議ツールを使って質問する最適な方法を示します。
+** 設定によっては、会議ツールのチャット (または同様のもの) も利用できる場合があります。主催者にご確認ください。
