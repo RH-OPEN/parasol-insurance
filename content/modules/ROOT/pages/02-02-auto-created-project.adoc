@@ -22,17 +22,10 @@ image::02/02-02-open-project.png[]
 [.bordershadow]
 image::02/02-02-pre-created-components.png[]
 
-* These components are as follows:
-1. Workbenches: a workbench has already been created - this is the environment that you can experiment and train models in.
-2. Pipelines: a pipeline server has already been configured so you can import or run data science pipelines right away. At the moment, it is empty, but we will populate it with a pipeline in a next section.
-3. Models: the models panel is empty at the moment.
-4. Cluster storage: this is where you find a persistent storage for your workbench and one for the pipeline we will create later.
-5. Data Connections: it contains all the information needed to connect with an existing S3 storage. We use it to store models and pipeline artifacts.
-6. Permissions: this is where you can manage the permissions for the project.
 * これらのコンポーネントは次のとおりです。
-1. Workbenches: ワークベンチはすでに作成されています。これは、モデルを実験およびトレーニングできる環境です。
-2. Pipelines: パイプライン サーバーはすでに構成されているため、データ サイエンス パイプラインをすぐにインポートまたは実行できます。現時点では空ですが、次のセクションでパイプラインを追加します。
-3. Models: モデル パネルは現時点では空です。
-4. Cluster storage: ここには、ワークベンチ用の永続ストレージと、後で作成するパイプライン用の永続ストレージがあります。
-5. Data Connections: 既存の S3 (互換)ストレージに接続するために必要なすべての情報が含まれています。モデルとパイプライン アーティファクトを保存するために使用します。
-6. Permissions: ここで、プロジェクトの権限を管理できます。
+1. ワークベンチ(Workbenches): ワークベンチはすでに作成されています。これは、モデルを実験およびトレーニングできる環境です。
+2. パイプライン(Pipelines): パイプライン サーバーはすでに構成されているため、データ サイエンス パイプラインをすぐにインポートまたは実行できます。現時点では空ですが、次のセクションでパイプラインを追加します。
+3. モデル(Models): モデル パネルは現時点では空です。
+4. クラスターストレージ(Cluster storage): ここには、ワークベンチ用の永続ストレージと、後で作成するパイプライン用の永続ストレージがあります。
+5. データ接続(Data Connections): 既存の S3 (互換)ストレージに接続するために必要なすべての情報が含まれています。モデルとパイプライン アーティファクトを保存するために使用します。
+6. 権限・パーミッション(Permissions): ここで、プロジェクトの権限を管理できます。

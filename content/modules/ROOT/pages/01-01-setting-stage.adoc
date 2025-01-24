@@ -6,7 +6,7 @@ include::_attributes.adoc[]
 == 状況
 :slide:
 
-** {company-name} is in the midst of digital transformation.
+** {company-name} はデジタル変革の真っ只中にあります。
 * 私たち全員が"{company-name}"という名の大手多国籍保険会社で働いています
 ** {company-name} はデジタル変革の真っ最中です
 ** 業務の近代化と新技術の活用を検討しています

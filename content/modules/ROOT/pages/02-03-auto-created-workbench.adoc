@@ -32,4 +32,39 @@ image::02/02-02-accept.png[]
 image::02/02-03-pre-created-jupyter.png[]
 
 * **parasol-insurance** という追加のフォルダーに注意してください。 +
-* このフォルダーは github からクローンされたもので、このラボのメインの作業フォルダーになります。
+* このフォルダーは事前に github からクローンされたものですが、説明が全て英語です。説明を日本語化したい場合には、以下の手順を実行ください。
+** 既存のparasol-insuranceフォルダを右クリックし、表示されたメニューから"Delete"を選択して削除します。
++
+[.bordershadow]
+image::02/delete-original.png[]
++
+** Jupyter で Git UI を開きます:
++
+[.bordershadow]
+image::02/git-clone-1.png[]
++
+** Git リポジトリの URL を入力します:
++
+[.console-input]
+[source,adoc]
+[subs=attributes+]
+----
+{git-clone-repo-url}
+----
++
+[.bordershadow]
+image::02/git-clone-2.png[]
+** 表示されるフォルダーのうち、"parasol-insurance"をダブルクリックして内容を表示します:
++
+[.bordershadow]
+image::02/02-03-pre-created-jupyter.png[]
+** 左のアイコンから再度Gitアイコンをクリックし"Current Branch"の右にある三角マークをクリックします:
++
+[.bordershadow]
+image::02/git-branch2.png[]
+** 表示されたブランチの中から、"translation-jp"ブランチ(origin/translation)をクリックして"Current Branch"が”translation”に切り替わることを確認します:
++
+[.bordershadow]
+image::02/git-branch3.png[]
+** 左のアイコンの最上部のフォルダーアイコンをクリックします:
+** 上記手順により、このラボの説明内容が日本語化されました。
