@@ -1,62 +1,58 @@
 = {lab_name}
 include::_attributes.adoc[]
 
-== {ic} Overview
+== {ic} 概要
 
-This {ic-lab} will illustrate how the use of various AI/ML technologies can be combined to produce a valuable solution to a business problem.
+この {ic-lab} では、さまざまな AI/ML テクノロジを組み合わせて、ビジネス上の問題に対する価値あるソリューションを生み出す方法を説明します。
 
-The information, code, models and techniques it contains are illustrations of what an AI-enhanced application first prototype could look like. It is not the definitive way of addressing the stated requirements.
+このラボに含まれる情報、コード、モデル、テクニックは、AI 強化アプリケーションの最初のプロトタイプがどのようなものになるかを示したものです。これは、規定された要件に対処する決定的な方法ではありません。
 
-== Disclaimer
+== 免責事項
 
-This {ic-lab} is an example of what a customer could build using {rhoai}. {rhoai} itself has no specific feature related to Insurance Claim Processing.
+この {ic-lab} は、お客様が {rhoai} を使用して構築できるものの例です。{rhoai} 自体には、保険金請求処理に関連する特定の機能はありません。
 
-This {ic-lab} makes use of large language models (LLM) and image processing models. These models are not included in the {rhoai} product. They are provided as a convenience for this {ic-lab}.
+この {ic-lab} では、大規模言語モデル (LLM) と画像処理モデルを使用します。これらのモデルは {rhoai} 製品には含まれていません。この {ic-lab} の利便性のために提供されています。
 
-The quality of these models is enough for a prototype. Choosing the right model to use in a production environment is a complex task that requires a lot of experimentation and tuning. This {ic-lab} does not cover this aspect.
+これらのモデルの品質はプロトタイプには十分です。実稼働環境で使用する適切なモデルを選択することは、多くの実験と調整を必要とする複雑な作業です。この {ic-lab} では、この側面はカバーされていません。
 
-== Timetable
+== タイムテーブル
 
-This is a tentative timetable for the materials that will be presented.
+これは発表される資料の暫定的な(参考)タイムテーブルです。
 
 [width="90%",cols="3,^2,^2,10",options="header"]
 |=========================================================
-| Name |Duration |Type |Description
+| Name |時間 |種類 |説明
 
-|Background |5 | Presentation
-a|- We describe what the desired end state looks like.
-- Describe overall user experience and underlying architecture.
-- Share mockups for better visualization
+|背景 |5 | プレゼンテーション
+a|- 望ましい最終状態がどのようなものかを説明します。
+- 全体的なユーザー エクスペリエンスと基礎となるアーキテクチャを説明します。
+- 視覚化を向上させるためにモックアップを共有します
 
-|Connection and Setup |5 | Hands-On
-a|- Attendees get connected
-- help validate environment health
-- access the playpen project
+| 接続とセットアップ | 5 | ハンズオン
+a|- 参加者が自身のワークショップ環境に接続します。
+- 環境の健全性の検証を行います。
+- プロジェクトにアクセスする
 
-|LLM |20 | Hands-On
-a|- summarization check
-- sentiment check
-- Model Comparison check and choice
-- prompt engineering exercise
-- confidence-check pipeline
+|LLM |20 | ハンズオン
+a|- 請求文書の要約
+- 感情の抽出
+- モデル比較と選択
+- パイプラインによる全性チェック
+- プロンプト エンジニアリング（オプション）
 
-|Image Processing |20 | Hands-On
-a|- car recognition checks
-- re-training exercise
-- model deployment
+| 画像処理 | 20 | ハンズオン
+a|- 車の画像認識
+- モデルの再トレーニング
+- モデルのサービング
 
-|Web App  |20 | Hands-On
-a|- deployment
-- update
+| Web アプリ | 20 | ハンズオン
+a|- GitOpsによるサンプルアプリケーションのデプロイ
+- 更新
 - RAG
-
-|Productization  |5 | Presentation + discussion
-a|- What else could we add that would have value?
-- What else could we do following the same patterns?
 
 |=========================================================
 
 
 == Contributing
 
-If you are interested in contributing to this project, consult this GitHub Repo: https://github.com/rh-aiservices-bu/parasol-insurance/[https://github.com/rh-aiservices-bu/parasol-insurance/,window=_blank]
+このプロジェクトへの貢献にご興味がある場合は、この GitHub リポジトリを参照してください: https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp [https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp,window=_blank]
