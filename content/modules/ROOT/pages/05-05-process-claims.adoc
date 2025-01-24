@@ -1,86 +1,84 @@
 = Pipeline for processing claims
 include::_attributes.adoc[]
 
-== What will the pipeline do?
-Now that we have the web app deployed, we can see that some claims are still unprocessed.
+== パイプラインは何をするのでしょうか?
+Web アプリをデプロイしたので、一部の Claim がまだ処理されていないことがわかります。
 
 [.bordershadow]
 image::05/05-new-app-claim-unprocessed.jpg[]
 
-Of course, we want to execute this processing, and it's even better if it can be fully automated!
+もちろん、この処理を実行したいのですし、完全に自動化できればさらに良いです。
 
-For that, we will use a pipeline that can either be run ad-hoc or scheduled just like, the confidence check pipeline. However, in this case, it won't technically be a Data Science Pipeline. It will be more of a raw Tekton Pipeline.
+そのために、アドホックに実行することも、信頼性チェック パイプラインと同様にスケジュールすることもできるパイプラインを使用します。ただし、この場合、技術的にはデータ サイエンス パイプラインではありません。それは素の Tekton パイプラインに近いものになります。
 
-// This pipeline is also a good starting point for creating an ArgoCD or Tekton pipeline which can be automatically triggered.
+// このパイプラインは、自動的にトリガーできる ArgoCD または Tekton パイプラインを作成するための良い開始点でもあります。
 
-== What's inside the pipeline?
+== パイプラインの中には何が入っているのでしょうか？
 
-Inside your VSCode workbench (if you have closed/stopped it, please restart it), if you navigate to `parasol-insurance/lab-materials/05/05-05` you can see a variety of files. +
-
+VSCode ワークベンチ内 (閉じたり停止してしまっている場合は、再起動してください) で `parasol-insurance/lab-materials/05/05-05` に移動すると、さまざまなファイルが表示されます。 +
 [.bordershadow]
 image::05/05-process-claims-yaml.png[]
 
 
-This time, we will use the **yaml definition** of a **pipeline**, `process-claims-pipeline.yaml`, to process the claims. +
+今回は、**パイプライン** `process-claims-pipeline.yaml` の **yaml definition** を使用して Claim を処理します。 +
 
-Here are the main files of the pipeline and what they do:
+パイプラインの主なファイルとその機能は次のとおりです。
 
-* *get_claims* - Will connect to the database, fetch any unprocessed claims, and add them to a list that will be passed to the other tasks through a file: `claims.json`
-* The following scripts will go through all the claims that need to be processed, and use the full body of the text to try and find some important feature, then push the results to the database:
-** *get_location* - Finds the location of the accident
-** *get_accident_time* - Finds the time of the accident
-** *summarize_text* - Makes a short summary of the text
-** *get_sentiment* - Gets the sentiment of the text
-* *detect_objects* - Downloads the images of the claim and uses the served object-detection model to classify the damages in the image
+* *get_claims* - データベースに接続し、未処理の Claim を取得し、ファイル `claims.json` を通じて他のタスクに渡されるリストに追加します。
+* 次のスクリプトは、処理する必要があるすべてのクレームを調べ、テキストの本文全体を使用して重要な特徴を見つけ、その結果をデータベースにプッシュします。
+** *get_location* - 事故現場を特定します
+** *get_accident_time* - 事故が起きたの時刻を見つける
+** *summarize_text* - テキストの短い要約を作成します
+** *get_sentiment* - 文章の感情を汲み取る
+* *detect_objects* - Claim の画像をダウンロードし、Serveされている物体検出モデルを使用して画像内の損害を分類します。
 
-== Pipeline artefacts storage
+== パイプラインアーティファクトのストレージ
 
-Before we can run the pipeline, we need a place to store intermediary files and results in. +
+パイプラインを実行する前に、中間ファイルと結果を保存する場所が必要です。 +
 
-This storage has already been created for you. +
+このラボでは、このストレージはすでに作成されています。 +
 
-You can verify that the Cluster Storage `Data Pipeline` is available in the {rhoai} Dashboard, in the **Cluster Storage** section of your project. +
+クラスター ストレージの `Data Pipeline` が、{rhoai} ダッシュボードのプロジェクト **Cluster Storage** セクションで利用可能であることを確認できます。 +
 
 [.bordershadow]
 image::05/05-data-pipeline-storage.png[]
 
-== Import the pipeline
+== パイプラインをインポートする
 
-To import the pipeline, start by downloading the `process-claims-pipeline.yaml` file locally.
-Navigate to `parasol-insurance/lab-materials/05/05-05` to find it.
+パイプラインをインポートするには、まず `process-claims-pipeline.yaml` file locally.ファイルをローカルにダウンロードします。 `parasol-insurance/lab-materials/05/05-05` に移動して見つけます。
 
 
-* Start by downloading the `process-claims-pipeline.yaml` file locally to your laptop
-** In your VSCode Workbench, right-click on the file, and select **Download**
-** Save the file somewhere on your laptop
-* Then go to the {rhoai} Dashboard
-* Select your Data Science project
-* Scroll down until you see the **Pipelines** section
-* Click **Import Pipeline**
+* まず `process-claims-pipeline.yaml` ファイルをラップトップのローカルにダウンロードします。
+** VSCode ワークベンチで、ファイルを右クリックし、 **Download** を選択します。
+** ファイルをラップトップ上のどこかに保存します。
+* 次に、 {rhoai} ダッシュボードに移動します。
+* これまで使用していたデータ サイエンス プロジェクトを選択します。
+* **Pipelines** セクションが表示されるまで下にスクロールします。
+* **Import Pipeline** をクリックします。
 +
 [.bordershadow]
 image::05/05-import-pipeline.png[import pipeline]
 
-* Now upload the `process-claims-pipeline.yaml` file, either by drag-and-dropping or using the Upload button
-* Then make sure to give your pipeline a good name like `Process Claims Pipeline`
-* It should look something like this:
+* 次に、ドラッグ アンド ドロップまたは Upload ボタンを使用して、 `process-claims-pipeline.yaml` ファイルをアップロードします。
+* パイプラインに `Process Claims Pipeline` のような適切な名前を付けるようにしてください。
+* 次のようになります。
 +
 [.bordershadow]
 image::05/05-import-pipeline-highlighted.png[imported pipeline]
 
-* Click  **Import Pipeline** and you should see it appear under the Data Science Pipelines section:
+* **Import Pipeline** をクリックすると、Data Science Pipelines section にそれが表示されるはずです。
 +
 [.bordershadow]
 image::05/05-process-claims-pipeline-imported.png[]
 
-== Run the pipeline
+== パイプラインを実行する
 
-* From the drop-down menu `Actions` on the top right, select `Create Run` (don't mind the popup about the Kubeflow v1 SDK, it is just a warning if you were to use a previous version):
+* 右上のドロップダウン メニュー `Actions` から、 `Create Run` を選択します。（Kubeflow v1 SDK に関するポップアップは気にしないでください。以前のバージョンを使用している場合の単なる警告です。）
 +
 [.bordershadow]
 image::05/05-create-run.png[create run]
 
-* Use these settings (leave the others with their default values):
+* 次の設定を使用します。（他の設定はデフォルト値のままにします。)
 ** Run details->Name:
 [.lines_space]
 [.console-input]
@@ -100,31 +98,31 @@ Process Claim Run
 [subs=attributes+]
 http://modelmesh-serving.{user}:8008
 
-This is the same route to the object detection endpoint that was used earlier in the workshop.
+これは、ワークショップで以前に使用した物体検出エンドポイントへの同じルートです。
 
-* When done it should look something like this:
+* 完了すると、次のようになります。
 +
 [.bordershadow]
 image::05/05-run-settings-create-pipeline.png[run settings]
 
-* Note that by changing claim_id you can change which claim to process. We set it to 0 to process all unprocessed claims
+* claim_id を変更すると、処理するクレームを変更できることに注意してください。未処理の Claim をすべて処理するには、0 に設定します。
 
-* Click **Create** and watch it run (it will take 5-15 seconds to start):
+* **Create** をクリックして、実行を確認します。（開始までに 5 ～ 15 秒かかります。）
 +
 [.bordershadow]
 image::05/05-process-claims.png[process]
 
-== Check the results
+== 結果を確認する
 
-* After the pipeline has finished running, you can go to the app and take a look at the claims.
-* You will now see that all the claims are processed (you may need to refresh the page).
+* パイプラインの実行が完了したら、アプリに移動して Claim を確認できます。
+* すべての Claim が処理されたことがわかります。（ページを更新する必要がある場合があります。）
 +
 [.bordershadow]
 image::05/05-process-claim3-app.jpg[claim3processed]
 
-* Click on the claim CLM502803 and you will see that it has been processed.
-* Instead of just a long body, you will now see a summary, a location field, an accident time field, and a sentiment field.
-* You can also see that we have new image(s) which have bounding boxes where the damage is:
+* Claim CLM502803 をクリックすると、処理されたことがわかります。
+* 単なる長い本文の代わりに、概要、場所フィールド、事故時刻フィールド、感情フィールドが表示されます。
+* また、損傷箇所に境界ボックスが表示された新しい画像があることもわかります。
 +
 [.bordershadow]
 image::05/05-processed-claim.jpg[claim3processed]
