@@ -55,4 +55,4 @@ a|- GitOpsによるサンプルアプリケーションのデプロイ
 
 == Contributing
 
-このプロジェクトへの貢献にご興味がある場合は、この GitHub リポジトリを参照してください: https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp [https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp,window=_blank]
+このプロジェクトへの貢献にご興味がある場合は、この GitHub リポジトリを参照してください: https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp[https://github.com/RH-OPEN/parasol-insurance/tree/translation-jp,window=_blank]
