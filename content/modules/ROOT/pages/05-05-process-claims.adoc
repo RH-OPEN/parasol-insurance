@@ -15,12 +15,12 @@ image::05/05-new-app-claim-unprocessed.jpg[]
 
 == パイプラインの中には何が入っているのでしょうか？
 
-VSCode ワークベンチ内 (閉じたり停止してしまっている場合は、再起動してください) で `parasol-insurance/lab-materials/05/05-05` に移動すると、さまざまなファイルが表示されます。 +
+VSCode ワークベンチ内 (閉じたり停止してしまっている場合は、再起動してください) で `parasol-insurance/lab-materials/05/05-05` に移動すると、さまざまなファイルが表示されます。
 [.bordershadow]
 image::05/05-process-claims-yaml.png[]
 
 
-今回は、**パイプライン** `process-claims-pipeline.yaml` の **yaml definition** を使用して Claim を処理します。 +
+今回は、**パイプライン** `process-claims-pipeline.yaml` の **yaml definition** を使用して Claim を処理します。
 
 パイプラインの主なファイルとその機能は次のとおりです。
 
@@ -34,11 +34,9 @@ image::05/05-process-claims-yaml.png[]
 
 == パイプラインアーティファクトのストレージ
 
-パイプラインを実行する前に、中間ファイルと結果を保存する場所が必要です。 +
+パイプラインを実行する前に、中間ファイルと結果を保存する場所が必要です。 このラボでは、このストレージはすでに作成されています。
 
-このラボでは、このストレージはすでに作成されています。 +
-
-クラスター ストレージの `Data Pipeline` が、{rhoai} ダッシュボードのプロジェクト **Cluster Storage** セクションで利用可能であることを確認できます。 +
+クラスター ストレージの `Data Pipeline` が、{rhoai} ダッシュボードのプロジェクト **Cluster Storage** セクションで利用可能であることを確認できます。
 
 [.bordershadow]
 image::05/05-data-pipeline-storage.png[]
