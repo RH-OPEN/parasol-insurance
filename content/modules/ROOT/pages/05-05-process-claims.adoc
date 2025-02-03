@@ -51,7 +51,7 @@ image::05/05-data-pipeline-storage.png[]
 ** ファイルをラップトップ上のどこかに保存します。
 * 次に、 {rhoai} ダッシュボードに移動します。
 * これまで使用していたデータ サイエンス プロジェクトを選択します。
-* **Pipelines** セクションが表示されるまで下にスクロールします。
+* **Pipelines** タブを選択します。
 * **Import Pipeline** をクリックします。
 +
 [.bordershadow]
