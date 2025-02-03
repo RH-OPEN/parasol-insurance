@@ -5,8 +5,8 @@ include::_attributes.adoc[]
 
 コンテンツに関する https://github.com/rh-aiservices-bu/parasol-insurance/issues[issues,window=_blank] に気付いた場合や、 https://github.com/rh-aiservices-bu/parasol-insurance/pulls[pull request,window=_blank] を送信したい場合は、ぜひお知らせください。
 
-この {ic} の手順は、https://rh-aiservices-bu.github.io/parasol-insurance/[https://rh-aiservices-bu.github.io/parasol-insurance/,window=_blank] からいつでも参照できます。 {ic-lab} の改善を続けると、新しいコンテンツで更新されるため、この URL をメモしておいてください。
+この {ic} の手順は、 https://rh-aiservices-bu.github.io/parasol-insurance/[https://rh-aiservices-bu.github.io/parasol-insurance/,window=_blank] からいつでも参照できます。 {ic-lab} の改善を続けると、新しいコンテンツで更新されるため、この URL をメモしておいてください。
 
 == 謝辞
 
-この {ic}、https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] の作成に協力してくれた皆さん、そしてレビュー担当者の皆さんに感謝します。
+この {ic}、 https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] の作成に協力してくれた皆さん、そしてレビュー担当者の皆さんに感謝します。
