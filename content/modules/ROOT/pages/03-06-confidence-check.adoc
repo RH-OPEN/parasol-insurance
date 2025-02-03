@@ -41,7 +41,7 @@ Elyraでは、パイプラインをインポートして実行するのとは異
 +
 [.bordershadow]
 image::03/07-elyra-pipeline.png[elyra confidence pipeline]
-. パイプラインが保存されていないという警告が表示される場合がありますが、これは正常な動作です。この場合は、**[保存して送信]** をクリックしてください。
+. パイプラインが保存されていないという警告が表示される場合がありますが、これは正常な動作です。この場合は、**[Save and Submit]** をクリックしてください。
 +
 [.bordershadow]
 image::03/03-06-unsaved-changes.png[]
@@ -50,11 +50,12 @@ image::03/03-06-unsaved-changes.png[]
 [.bordershadow]
 image::03/03-07-run-pipeline-ok.png[]
 
-. 「**ジョブの Data Science Pipelines への送信に成功しました」**というポップアップが表示されたら、「**詳細の実行」**リンクをクリックして、パイプラインの進行状況を確認します。
+. **Job submission to Data Science Pipelines succeeded**というポップアップが表示されたら、**[Run Details]**リンクをクリックして、パイプラインの進行状況を確認します。
 
 == 実行のスケジュール
 
-確信度チェックが定期的に実行されるように、実行を**スケジュール**することもできます。+
+確信度チェックが定期的に実行されるように、実行を**スケジュール**することもできます。
++
 実行するには：
 
 . {rhoai} Data Science Projectに戻ります。
@@ -64,7 +65,7 @@ image::03/03-07-run-pipeline-ok.png[]
 [.bordershadow]
 image::03/07-create-schedule.png[create schedule]
 
-. 次の画面で名前を指定し、**日**ごとに実行される定期実行を選択して、**Create schedule**をクリックします。
+. 次の画面で名前を指定し、**Day(日)**ごとに実行される定期実行を選択して、**Create schedule**をクリックします。
 +
 [.bordershadow]
 image::03/03-06-dailyrun.png[]
