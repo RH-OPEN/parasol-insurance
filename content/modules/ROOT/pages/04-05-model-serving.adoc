@@ -101,7 +101,7 @@ Standard
 [.console-input]
 [source, text]
 [subs=attributes+]
-None (bug: even when selecting `None`, the drop down will still show `Select...`)
+None (bug: `None`を選択した場合でも、ドロップダウンには`Select...`が表示されます。)
 ** Model route
 [.lines_space]
 [.console-input]
