@@ -3,7 +3,7 @@ include::_attributes.adoc[]
 
 ==  {ic} 資料へ
 
-この {ic} に関するフィードバックがある場合は、 asol-insurance/issues[Issues,window=_blank] および /pulls[Pull Requests,window=_blank] を使用してください。
+この {ic} に関するフィードバックがある場合は、 https://github.com/rh-aiservices-bu/parasol-insurance/issues[Issues,window=_blank] および https://github.com/rh-aiservices-bu/parasol-insurance/pulls[Pull Requests,window=_blank] を使用してください。
 
 ただし、 {ic} のこのセクションは、**ラボへの** 改善と改良を目的としたものではありません。代わりに、次の内容について説明します。
 
