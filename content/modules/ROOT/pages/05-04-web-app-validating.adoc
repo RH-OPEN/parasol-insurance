@@ -41,7 +41,7 @@ image::05/new-app-1.png[]
 [.bordershadow]
 image::05/new-app-chat-icon.png[]
 
-- アシスタントが開き、Claim について質問できるようになります。 RAG ノートブックで見てきたように、アシスタントはいくつかのドキュメントを頼りに質問に答えることができます。たとえば、**CLM202401** という Claim については、「ダニエルには赤信号で通過する権利がありましたか?」と試してみます。
+- アシスタントが開き、Claim について質問できるようになります。 RAG ノートブックで見てきたように、アシスタントはいくつかのドキュメントを頼りに質問に答えることができます。たとえば、**CLM202401** という Claim については、「Did Daniel have the right to pass at the red light?」と試してみます。
 +
 [.bordershadow]
 image::05/new-app-chat.png[]
