@@ -9,4 +9,4 @@ include::_attributes.adoc[]
 
 == 謝辞
 
-この {ic}、 https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] の作成に協力してくれた皆さん、そしてレビュー担当者の皆さんに感謝します。
+この {ic} の作成に協力してくれた https://github.com/rh-aiservices-bu/parasol-insurance/graphs/contributors[contributors,window=_blank] そしてレビュー担当者の皆さんに感謝します。
