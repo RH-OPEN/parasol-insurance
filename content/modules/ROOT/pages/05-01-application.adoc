@@ -41,6 +41,7 @@ image::05/stop-workbench.png[]
 
 
 - `image selection` セクションで、イメージを `CUSTOM - Code Server for {ic}` に変更します。
++
 [.bordershadow]
 image::05/05-change-to-vscode.png[]
 
