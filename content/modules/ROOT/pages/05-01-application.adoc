@@ -1,30 +1,30 @@
 = Application Overview
 include::_attributes.adoc[]
 
-== Architecture
+== アーキテクチャ
 
-Here is a simplified architecture diagram of the application:
+アプリケーションの簡略化されたアーキテクチャ図は次のとおりです。
 
 [.bordershadow]
 image::05/application-architecture.drawio.svg[]
 
 
-The different components are:
+さまざまなコンポーネントは次のとおりです。
 
-- The **frontend**: the application itself, developed using the Patternfly framework (React, Typescript), running in the browser of the user.
-- The **backend**: a Python FastAPI application, running in a container on {ocp}. It handles the communication with the database, the LLM, and the Object storage. It handles the communication with the frontend by exposing a REST API.
-- The **database**: a PostgreSQL database, running in a container on {ocp}. It stores the claims.
-- The **LLM**: the language model used to summarize and extract information from the claims, and powering the chatbot. It is consumed by the backend through its API.
-- The **VectorDB**: the vector database used to store documents for retrieval in the RAG part. It's based on Milvus.
-- The **Object storage**: an S3-compatible object storage. It stores the claim images.
+- **frontend**: Patternfly フレームワーク (React、Typescript) を使用して開発されたアプリケーション自体で、ユーザーのブラウザーで実行されます。
+- **backend**: {ocp} 上のコンテナーで実行される Python FastAPI アプリケーション。データベース、LLM、およびオブジェクト ストレージとの通信を処理します。REST API を公開することで、フロントエンドとの通信を処理します。
+- **database**: {ocp} 上のコンテナーで実行される PostgreSQL データベース。Claim を保存します。
+- The **LLM**: クレームから情報を要約および抽出し、チャットボットを強化するために使用される言語モデル。これは、API を通じてバックエンドによって使用されます。
+- **VectorDB**: RAG 部分で検索するドキュメントを保存するために使用されるベクトル データベース。Milvus をベースにしています。
+- **Object storage**: S3 互換のオブジェクト ストレージ。Claim 画像を保存します。
 
-== Application Code
+== アプリケーション コード
 
-If you want to have a look at the code of the application, you can do it directly from {rhoai}!
+アプリケーションのコードを確認したい場合は、 {rhoai} から直接行うことができます。
 
-- Close the different Jupyter tabs that may still be opened in your browser.
-- Go back to the {rhoai} Dashboard.
-- Stop your Workbench by using the toggle.
+- ブラウザーでまだ開いている可能性のあるさまざまな Jupyter タブを閉じます。
+- {rhoai} ダッシュボードに戻ります。
+- トグルを使用してワークベンチを停止します。
 
 +
 [.bordershadow]
@@ -33,42 +33,41 @@ image::05/05-toggle-off-workbench.png[]
 image::05/05-confirm-turn-off.png[]
 
 
-- You should probably give it 5 or 10 seconds to fully stop.
-- Edit the Workbench configuration by clicking the 3 vertical dots on the right, then choose the **Edit workbench** button.
+- 完全に停止するには、おそらく 5 秒から 10 秒かかります。
+- 右側にある 3 つの縦の点をクリックして **Edit workbench** ボタンを選択し、ワークベンチ構成を編集します。
 +
 [.bordershadow]
 image::05/stop-workbench.png[]
 
 
-- In the `image selection` section, change the image to `CUSTOM - Code Server for {ic}`:
-+
+- `image selection` セクションで、イメージを `CUSTOM - Code Server for {ic}` に変更します。
 [.bordershadow]
 image::05/05-change-to-vscode.png[]
 
-- Then click on `Update workbench` at the bottom of the page:
+- 次に、ページの下部にある「**Update workbench**」をクリックします。
 +
 [.bordershadow]
 image::05/update-workbench.png[]
 
-- You can now start your Workbench again by using the toggle.
-- Once the Workbench is started, click on the **Open** Link.
-- You will be redirected to the VSCode IDE (Code Server is the open source implementation of VSCode).
-- After logging in and accepting the authorization, VSCode will open.
-- The first time you connect to it, you must indicate that you trust the workspace.
-- Click on the **Yes, I trust the authors** button.
+- トグルを使用してワークベンチを再度起動できるようになりました。
+- ワークベンチが起動したら、**開く** リンクをクリックします。
+- VSCode IDE にリダイレクトされます。（Code Server は VSCode のオープンソース実装です。）
+- ログインして承認を受け入れると、VSCode が開きます。
+- 初めて接続するときは、ワークスペースを信頼していることを示す必要があります。
+- **Yes, I trust the authors** ボタンをクリックします。
 +
 [.bordershadow]
 image::05/trust-vscode.png[]
 
-* You can also close the Welcome tab, and you are in a familiar VSCode environment.
-* Your Persistent Volume has been automatically reconnected to this new environment.
-** Therefore, all the data you created in the Jupyter environment is still available
-** You can see more files because VSCode displays hidden files by default, which Jupyter does not do.
-* If you want, you can now explore the code of the application, in the `parasol-insurance/app` folder:
+* Welcome タブを閉じると、使い慣れた VSCode 環境に戻ります。
+* 永続ボリュームは、この新しい環境に自動的に再接続されました。
+** したがって、Jupyter 環境で作成したすべてのデータは引き続き利用できます。
+** VSCode はデフォルトで隠しファイルを表示するため、より多くのファイルを表示できますが、Jupyter ではそうではありません。
+* 必要に応じて、 `parasol-insurance/app` フォルダー内のアプリケーションのコードを調べることができます。
 +
 [.bordershadow]
 image::05/app-code.png[]
 
-Of course, this is a complete VSCode environment, so you can configure it in the same way as you would do for a local VSCode installation. You can install extensions that will be persisted when you stop and restart the Workbench, you can configure your own keybindings, etc.
+もちろん、これは完全な VSCode 環境であるため、ローカルの VSCode インストールと同じ方法で構成できます。ワークベンチを停止して再起動したときに永続化される拡張機能をインストールしたり、独自のキーバインドを構成したりできます。
 
-The application has already been built as a container image that we are now ready to deploy using GitOps. You can head to the next section.
+アプリケーションはすでにコンテナー イメージとして構築されており、GitOps を使用してデプロイする準備が整いました。次のセクションに進むことができます。
