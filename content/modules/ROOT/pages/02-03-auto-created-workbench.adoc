@@ -62,7 +62,7 @@ image::02/02-03-pre-created-jupyter.png[]
 +
 [.bordershadow]
 image::02/git-branch2.png[]
-** 表示されたブランチの中から、"translation-jp"ブランチ(origin/translation-jp)をクリックして"Current Branch"が”translation”に切り替わることを確認します:
+** 表示されたブランチの中から、"translation-jp"ブランチ(origin/translation-jp)をクリックして"Current Branch"が”translation-jp”に切り替わることを確認します:
 +
 [.bordershadow]
 image::02/git-branch3.png[]
