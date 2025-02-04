@@ -19,7 +19,7 @@ image::05/05-open-argocd.png[]
 +
 [.bordershadow]
 image::05/05-login-argocd-openshift.png[]
-*Note:* 下の画像は 'user1' になっていますが、*必ず割り当てられたユーザーを使用してください。*
+*Note:* 下の画像は 'userX' になっていますが、当てられたユーザーを使用してください。
 [.bordershadow]
 image::05/05-openshift-login.png[]
 
