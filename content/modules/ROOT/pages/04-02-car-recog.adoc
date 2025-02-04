@@ -18,7 +18,7 @@ image::04/model-prediction-results.png[車を予測]
 
 上の画像では、YOLO モデルは 17 台の車と 1 台のトラックを識別しました。
 
-したがって、YOLO モデルによって識別された車の周囲にボックスを描画するコードを作成する必要があります。
+ここでは、YOLO モデルによって識別された車の周囲にボックスを描画するコードを作成します。
 
 [.bordershadow]
 image::04/box-identified-cars.png[車を識別]
