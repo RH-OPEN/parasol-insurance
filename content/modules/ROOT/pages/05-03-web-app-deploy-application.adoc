@@ -12,11 +12,9 @@ image::05/05-open-argocd.png[]
 
 - "Log in via OpenShift" をクリックして、これまでのラボで利用している資格情報を使用してログインします。
 +
-__Note: 下の画像はuser1になっていますが、割り当てられたユーザーを使用してください。__
-
 * アカウント ID: `{user}`
 * パスワード: `{password}`
-
+__Note: 下の画像はuser1になっていますが、割り当てられたユーザーを使用してください。__
 [.bordershadow]
 image::05/05-login-argocd-openshift.png[]
 +
