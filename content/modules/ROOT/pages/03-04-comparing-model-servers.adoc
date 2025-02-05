@@ -1,9 +1,9 @@
 = Comparing two LLMs
 include::_attributes.adoc[]
 
-これまでのところ、この {ic-lab} ではhttps://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2[Mistral-7B Instruct v2,window=_blank]を使用してきました。他のモデルよりは軽量ですが、それでもかなり重く、実行するには大きな GPU が必要です。CPU のみで実行する小さなモデルでも同じくらい良い結果が得られるでしょうか? 試してみましょう!
+これまでのところ、この {ic-lab} では https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2[Mistral-7B Instruct v2,window=_blank] を使用してきました。他のモデルよりは軽量ですが、それでもかなり重く、実行するには大きな GPU が必要です。CPU のみで実行する小さなモデルでも同じくらい良い結果が得られるでしょうか? 試してみましょう!
 
-この演習では、以前のモデルを、https://huggingface.co/google/flan-t5-large[flan-t5-large,window=_blank] というはるかに小さい LLM と比較します。結果を比較して、小さいモデルがユースケースに十分であるかどうかを確認します。
+この演習では、以前のモデルを、 https://huggingface.co/google/flan-t5-large[flan-t5-large,window=_blank] というはるかに小さい LLM と比較します。結果を比較して、小さいモデルがユースケースに十分であるかどうかを確認します。
 
 `parasol-insurance/lab-materials/03` フォルダから、`03-04-comparing-model-servers.ipynb` というノートブックを開き、指示に従ってください。
 
