@@ -16,5 +16,3 @@ LLMは非常に強力なツールですが、訓練データを通じて得ら�
 `parasol-insurance/lab-materials/03` フォルダから、 `03-05-retrieval-augmented-generation.ipynb` というノートブックを開き、指示に従ってください。
 
 完了したら、ノートブックを閉じて次のページに進みます。
-
-When done, you can close the notebook and head to the next page.
