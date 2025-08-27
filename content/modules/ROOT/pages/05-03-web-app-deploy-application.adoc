@@ -46,9 +46,9 @@ spec:
     namespace: {user}
   project: project-{user}
   source:
-    path: lab-materials/05/app
+    path: lab-materials/05/app/overlays/main
     repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
-    targetRevision: main-rhoai-2.13
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
