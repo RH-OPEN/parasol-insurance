@@ -11,15 +11,15 @@ include::_attributes.adoc[]
 
 == データ接続の作成
 
-* Select **S3 compatible object storage - v1** * を選択します。
-
-[.bordershadow]
-image::04/04-add-data-connection-2.png[]
-
 * データ サイエンス プロジェクトの *Data connections* タブで、 **Add data connection** をクリックして、モデルのコピーが保存されている共有ストレージ (Minio) を参照する接続を作成します。
 +
 [.bordershadow]
 image::04/04-add-data-connection.png[]
+
+* 以下の画面で **S3 compatible object storage - v1** * を選択します。
++
+[.bordershadow]
+image::04/04-add-data-connection-2.png[]
 
 * 入力する必要がある情報は次のとおりです。
 ** Name:
