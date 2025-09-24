@@ -1,17 +1,17 @@
 = Model Serving
 include::_attributes.adoc[]
 
-. この時点で、モデルを {rhoai-short} モデル サービングにデプロイする必要があります。
-. もう 1 つのデータ接続を作成します...
-.. ほぼ同じ情報を使用します。
+. これから、モデルを {rhoai-short} モデル サービングにデプロイする必要があります。
+. もう 1 つの接続(ストレージ接続設定)を作成します...
+.. 既存の接続とほぼ同じ情報を使用します。
 .. ただし、バケット名を `{user}` から `models` に変更します。
 
 
 == Create a Data Connection
 
-== データ接続の作成
+== 接続の作成
 
-* データ サイエンス プロジェクトの *Data connections* タブで、 **Add data connection** をクリックして、モデルのコピーが保存されている共有ストレージ (Minio) を参照する接続を作成します。
+* データ サイエンス プロジェクトの *Connections* タブで、 **Create connection** をクリックして、モデルのコピーが保存されている共有ストレージ (Minio) を参照する接続を作成します。
 +
 [.bordershadow]
 image::04/04-add-data-connection.png[]
