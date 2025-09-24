@@ -106,7 +106,7 @@ Standard
 [.console-input]
 [source, text]
 [subs=attributes+]
-None (bug: `None`を選択した場合でも、ドロップダウンには`Select...`が表示されます。)
+None
 ** Model route
 [.lines_space]
 [.console-input]
