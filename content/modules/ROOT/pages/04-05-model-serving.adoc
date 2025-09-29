@@ -70,7 +70,7 @@ image::04/model-data-connection.png[モデル接続]
 
 **非常に重要** : 次の手順では、注意して適切なタイプのモデル サーバーを選択してください。そうしないと、プロジェクトをリセットする必要があります。
 
-* **Multi-model serving platform** タイプのモデル (右側) で、 **Add model server** をクリックします。
+* **Multi-model serving platform** タイプのモデル (右側) で、 **Select multi-model** をクリックします。
 +
 [.bordershadow]
 image::04/add-model-server.png[]
