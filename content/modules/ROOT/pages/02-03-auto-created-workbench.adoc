@@ -10,7 +10,7 @@ include::_attributes.adoc[]
 [.bordershadow]
 image::02/02-03-pre-created-workbench-info.png[]
 
-* ワークベンチに接続するには、 **Open** リンクをクリックします。:
+* ワークベンチに接続するには、 **My Workbench** 横のリンク(四角から矢印が出ているアイコン)をクリックします。:
 +
 [.bordershadow]
 image::02/02-03-open-link.png[]
