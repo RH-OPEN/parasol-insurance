@@ -55,7 +55,7 @@ image::05/05-change-to-vscode.png[]
 [.bordershadow]
 image::05/update-workbench.png[]
 
-- トグルを使用してWorkbench statusダイアログを開き、**Start workbench**ワークベンチをクリックして再度起動してください。起動が完了(ダイアログ上部の"Workbench status"の文字の横がStoppedからRunningに変化)したら、先ほどと同様に、Workbench statusダイアログ右上のxを押して閉じてください。
+- トグルを使用してWorkbench statusダイアログを開き、下部の**Start workbench**をクリックして再度起動してください。起動が完了(ダイアログ上部の"Workbench status"の文字の横がStoppedからRunningに変化)したら、先ほどと同様に、Workbench statusダイアログ右上のxを押して閉じてください。
 - ワークベンチが起動したら、**My Workbench** 横のリンク(四角から矢印が出ているアイコン)をクリックします。:
 +
 [.bordershadow]
