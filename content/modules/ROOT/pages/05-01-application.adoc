@@ -29,9 +29,11 @@ image::05/application-architecture.drawio.svg[]
 [.bordershadow]
 image::05/05-toggle-off-workbench.png[]
 - ** Stop workbench **を押します。ワークベンチを停止します。
++
 [.bordershadow]
 image::05/05-confirm-turn-off0.png[]
 - 確認画面で** Stop workbench **を押し、ワークベンチを停止します。
++
 [.bordershadow]
 image::05/05-confirm-turn-off.png[]
 
