@@ -64,6 +64,8 @@ models
 [.bordershadow]
 image::04/model-data-connection.png[モデル接続]
 
+* **Create** をクリックして、connectionを作成します。
+
 == モデル サーバーを作成する
 
 プロジェクトで **Models** タブを選択してモデル サーバーを作成します。
@@ -75,7 +77,7 @@ image::04/model-data-connection.png[モデル接続]
 [.bordershadow]
 image::04/add-model-server.png[]
 
-* 入力する必要がある情報は次のとおりです:
+* 遷移した先の画面の下部の**Add model server** をクリックします。入力する必要がある情報は次のとおりです:
 
 ** Model server name:
 [.lines_space]
@@ -194,7 +196,7 @@ image::04/model-deployed-success.png[]
 [.bordershadow]
 image::04/inference-url.png[]
 
-* **RestUrl** をメモするかコピーします。これは `\http://modelmesh-serving.{user}:8008` のようになります。
+* **restUrl** をメモするかコピーします。これは `\http://modelmesh-serving.{user}:8008` のようになります。
 
 この URL を使用してモデルをクエリします。
 
